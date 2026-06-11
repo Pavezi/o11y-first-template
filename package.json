@@ -1,0 +1,30 @@
+{
+  "name": "o11y-first-template",
+  "version": "1.0.0",
+  "description": "**The Gold Standard for Resilient & Observable Distributed Systems.**",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "^1.9.1",
+    "@opentelemetry/auto-instrumentations-node": "^0.76.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.218.0",
+    "@opentelemetry/sdk-node": "^0.218.0",
+    "fastify": "^5.8.5",
+    "pino": "^10.3.1",
+    "pino-pretty": "^13.1.3"
+  }
+}
