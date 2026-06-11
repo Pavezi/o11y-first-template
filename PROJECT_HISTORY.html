@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O11y-First - Histórico de Evolução</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --success: #22c55e;
+            --warning: #eab308;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #64748b;
+        }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1rem;
+        }
+        h1 { color: var(--primary); margin-bottom: 0.5rem; }
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .meta-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .meta-card span { display: block; font-size: 0.8rem; color: var(--gray); text-transform: uppercase; }
+        .meta-card strong { font-size: 1.2rem; color: var(--dark); }
+
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 3px solid var(--primary);
+        }
+        .event {
+            position: relative;
+            margin-bottom: 2.5rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+        .event::before {
+            content: '';
+            position: absolute;
+            left: -2.4rem;
+            top: 1.5rem;
+            width: 1rem;
+            height: 1rem;
+            background: var(--primary);
+            border-radius: 50%;
+            border: 3px solid var(--light);
+        }
+        .event-date {
+            font-size: 0.85rem;
+            color: var(--primary);
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .event-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .badge {
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            border-radius: 12px;
+            text-transform: uppercase;
+        }
+        .badge-success { background: #dcfce7; color: #166534; }
+        .badge-progress { background: #fef9c3; color: #854d0e; }
+
+        ul { padding-left: 1.2rem; margin: 0.5rem 0; }
+        li { margin-bottom: 0.3rem; }
+        code { background: #f1f5f9; padding: 2px 4px; border-radius: 4px; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 O11y-First Template</h1>
+            <p>Histórico fiel de desenvolvimento e evolução técnica.</p>
+        </header>
+
+        <div class="meta-grid">
+            <div class="meta-card">
+                <span>Início do Projeto</span>
+                <strong>10 Jun 2026</strong>
+            </div>
+            <div class="meta-card">
+                <span>Total Investido</span>
+                <strong>~2.5 Horas</strong>
+            </div>
+            <div class="meta-card">
+                <span>Status Atual</span>
+                <strong>Fase 1: Fundação</strong>
+            </div>
+            <div class="meta-card">
+                <span>Branches Ativas</span>
+                <strong>main, feat/opentelemetry</strong>
+            </div>
+        </div>
+
+        <div class="timeline">
+            <!-- Evento 1 -->
+            <div class="event">
+                <div class="event-date">10 de Junho, 2026 - Noite</div>
+                <div class="event-title">
+                    Fundação e Setup de Segurança
+                    <span class="badge badge-success">Concluído</span>
+                </div>
+                <p>Inicialização do ecossistema e garantias de segurança para código aberto.</p>
+                <ul>
+                    <li>Configuração de <strong>GPG Signing</strong> e <strong>SSH Access</strong>.</li>
+                    <li>Inicialização do repositório remoto no GitHub.</li>
+                    <li>Criação do <code>GEMINI.md</code> para persistência de memória do agente.</li>
+                </ul>
+            </div>
+
+            <!-- Evento 2 -->
+            <div class="event">
+                <div class="event-date">10 de Junho, 2026 - Noite</div>
+                <div class="event-title">
+                    Base Técnica (Fastify + TS)
+                    <span class="badge badge-success">Concluído</span>
+                </div>
+                <p>Estabelecimento da stack tecnológica principal.</p>
+                <ul>
+                    <li>Setup de <strong>TypeScript 5.x</strong> com ESM nativo e Node 22.</li>
+                    <li>Implementação do servidor <strong>Fastify</strong> com rota de <code>/health</code>.</li>
+                    <li>Scripts de automação com <code>tsx watch</code>.</li>
+                </ul>
+            </div>
+
+            <!-- Evento 3 -->
+            <div class="event">
+                <div class="event-date">10 de Junho, 2026 - Noite</div>
+                <div class="event-title">
+                    Observabilidade: Structured Logging
+                    <span class="badge badge-success">Concluído</span>
+                </div>
+                <p>Implementação do primeiro pilar da observabilidade.</p>
+                <ul>
+                    <li>Configuração do <strong>Pino Logger</strong> em <code>src/core/logger.ts</code>.</li>
+                    <li>Suporte a JSON em produção e <code>pino-pretty</code> em desenvolvimento.</li>
+                    <li>Integração nativa do Logger no lifecycle do Fastify.</li>
+                </ul>
+            </div>
+
+            <!-- Evento 4 -->
+            <div class="event">
+                <div class="event-date">10 de Junho, 2026 - Noite</div>
+                <div class="event-title">
+                    Observabilidade: OpenTelemetry
+                    <span class="badge badge-progress">Em Progresso</span>
+                </div>
+                <p>Implementação do segundo pilar: Distributed Tracing.</p>
+                <ul>
+                    <li>Criação da branch <code>feat/opentelemetry</code>.</li>
+                    <li>Configuração do <strong>OTEL SDK</strong> com auto-instrumentação.</li>
+                    <li>Criação do <code>docker-compose.yml</code> com <strong>Jaeger</strong>.</li>
+                    <li>Pendente: Teste de integração após ativação do Docker local.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
