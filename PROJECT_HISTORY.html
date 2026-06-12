@@ -118,16 +118,31 @@
             </div>
             <div class="meta-card">
                 <span>Status Atual</span>
-                <strong>Fase 1: Fundação (OTEL Validado)</strong>
+                <strong>Fase 1: Fundação Concluída</strong>
             </div>
             <div class="meta-card">
                 <span>Branches Ativas</span>
-                <strong>main, feat/opentelemetry (pronto para merge)</strong>
+                <strong>main</strong>
             </div>
         </div>
 
         <div class="timeline">
             <!-- Evento 1 -->
+...
+            <!-- Evento 5 -->
+            <div class="event">
+                <div class="event-date">12 de Junho, 2026 - Madrugada</div>
+                <div class="event-title">
+                    Automação de Infraestrutura e Validação Final
+                    <span class="badge badge-success">Concluído</span>
+                </div>
+                <p>Integração completa entre aplicação e stack de observabilidade.</p>
+                <ul>
+                    <li><strong>Automação:</strong> Inicialização do Docker Desktop via CLI (<code>systemctl --user start docker-desktop</code>).</li>
+                    <li><strong>Jaeger:</strong> Deploy do coletor e UI via Docker Compose após correção de permissões de registry.</li>
+                    <li><strong>End-to-End:</strong> Validação de traces distribuídos gerados pelo Fastify e visualizados no Jaeger UI.</li>
+                </ul>
+            </div>
             <div class="event">
                 <div class="event-date">10 de Junho, 2026 - Noite</div>
                 <div class="event-title">

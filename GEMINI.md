@@ -22,3 +22,10 @@ Este documento contém as instruções fundamentais e fluxos de trabalho para o 
 
 ## 🏗️ Infraestrutura Local
 - O stack de observabilidade (Jaeger, Prometheus, etc.) deve ser gerenciado via `docker-compose.yml`.
+- **Docker Desktop (Linux):** Para iniciar o daemon via CLI, usar `systemctl --user start docker-desktop`.
+- **Registry Issues:** Se encontrar erros de autenticação ao baixar imagens públicas, tente `docker logout` para operar anonimamente.
+
+## 🐛 Troubleshooting & Aprendizados
+- **OpenTelemetry v2.x:** A classe `Resource` não é exportada como construtor. Usar a factory `resourceFromAttributes` do pacote `@opentelemetry/resources`.
+- **Dependencies:** Ignorar avisos de `glob` depreciado por enquanto (dependência indireta do `tsx`).
+- **Git Hygiene:** Sempre verificar se `node_modules` não está sendo rastreado após manipulações no `.gitignore`.
