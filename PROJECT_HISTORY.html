@@ -118,11 +118,11 @@
             </div>
             <div class="meta-card">
                 <span>Status Atual</span>
-                <strong>Fase 1: Fundação</strong>
+                <strong>Fase 1: Fundação (OTEL Validado)</strong>
             </div>
             <div class="meta-card">
                 <span>Branches Ativas</span>
-                <strong>main, feat/opentelemetry</strong>
+                <strong>main, feat/opentelemetry (pronto para merge)</strong>
             </div>
         </div>
 
@@ -174,17 +174,17 @@
 
             <!-- Evento 4 -->
             <div class="event">
-                <div class="event-date">10 de Junho, 2026 - Noite</div>
+                <div class="event-date">12 de Junho, 2026 - Madrugada</div>
                 <div class="event-title">
                     Observabilidade: OpenTelemetry
-                    <span class="badge badge-progress">Em Progresso</span>
+                    <span class="badge badge-success">Concluído</span>
                 </div>
                 <p>Implementação do segundo pilar: Distributed Tracing.</p>
                 <ul>
-                    <li>Criação da branch <code>feat/opentelemetry</code>.</li>
                     <li>Configuração do <strong>OTEL SDK</strong> com auto-instrumentação.</li>
                     <li>Criação do <code>docker-compose.yml</code> com <strong>Jaeger</strong>.</li>
-                    <li>Pendente: Teste de integração após ativação do Docker local.</li>
+                    <li><strong>Bug Fix:</strong> Correção da importação de <code>Resource</code> para <code>resourceFromAttributes</code> (compatibilidade OTEL v2.x).</li>
+                    <li>Validação do lifecycle: Servidor inicia e SDK registra logs de sucesso.</li>
                 </ul>
             </div>
         </div>
