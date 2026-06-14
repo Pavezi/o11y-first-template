@@ -1,14 +1,14 @@
-# 🚀 O11y-First Microservices Template (Node.js)
+# 🚀 O11y-First Microservices Chassis (Node.js)
 
-**The Gold Standard for Resilient & Observable Distributed Systems.**
+**The Industrial-Grade Chassis for Resilient & Observable Distributed Systems.**
 
 ---
 
 ## 📖 Overview
 
-In 2026, building a microservice is easy; building a *maintainable, observable, and resilient* distributed system is the real challenge. Most templates focus on "features" first. This template flips the script: **Observability and Resilience are first-class citizens.**
+In 2026, building a microservice is easy; building a *maintainable, observable, and resilient* distributed system is the real challenge. Most templates focus on "features" first. This project provides the **Chassis**: a high-performance, pre-instrumented engine where your business logic resides, protected by built-in observability and resilience patterns.
 
-This is a production-ready boilerplate for Node.js microservices designed to give you 100% visibility from Day 1.
+This is a production-ready engine for Node.js microservices designed to give you 100% visibility and stability from Day 1.
 
 ## ✨ Key Features (The "Core 4")
 

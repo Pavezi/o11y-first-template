@@ -1,7 +1,7 @@
 {
-  "name": "o11y-first-template",
-  "version": "1.0.0",
-  "description": "**The Gold Standard for Resilient & Observable Distributed Systems.**",
+  "name": "o11y-first-chassis",
+  "version": "1.1.0",
+  "description": "**The Industrial-Grade Chassis for Resilient & Observable Distributed Systems.**",
   "main": "index.js",
   "directories": {
     "test": "tests"
